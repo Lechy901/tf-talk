@@ -1,0 +1,10 @@
+/logs/mnist/20220110-081742/events.out.tfevents.1641799080.LAPTOP-LD9HBVVD.31344.2.v2
+/logs/mnist/20220110-081742/train/events.out.tfevents.1641799062.LAPTOP-LD9HBVVD.31344.0.v2
+/logs/mnist/20220110-081742/validation/events.out.tfevents.1641799065.LAPTOP-LD9HBVVD.31344.1.v2
+/logs/mnist/20220110-081823/events.out.tfevents.1641799118.LAPTOP-LD9HBVVD.8000.2.v2
+/logs/mnist/20220110-081823/train/events.out.tfevents.1641799103.LAPTOP-LD9HBVVD.8000.0.v2
+/logs/mnist/20220110-081823/validation/events.out.tfevents.1641799106.LAPTOP-LD9HBVVD.8000.1.v2
+/logs/mnist/20220110-110729/events.out.tfevents.1641809297.LAPTOP-LD9HBVVD.24608.2.v2
+/logs/mnist/20220110-110729/train/events.out.tfevents.1641809250.LAPTOP-LD9HBVVD.24608.0.v2
+/logs/mnist/20220110-110729/validation/events.out.tfevents.1641809261.LAPTOP-LD9HBVVD.24608.1.v2
+/*.h5
