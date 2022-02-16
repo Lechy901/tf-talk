@@ -1,3 +1,6 @@
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
+
 import numpy as np
 import tensorflow as tf
 import datetime
@@ -6,6 +9,7 @@ from keras.datasets import mnist
 
 # Get dataset
 (train_x, train_y), (val_x, val_y) = mnist.load_data()
+# Normalize to interval (0, 1)
 train_x, val_x = train_x / 255, val_x / 255
 
 # Define model
@@ -13,6 +17,7 @@ model = tf.keras.models.Sequential([
     tf.keras.Input(shape=(28, 28)),
     tf.keras.layers.Flatten(),
     tf.keras.layers.Dense(64, activation=tf.nn.relu),
+    tf.keras.layers.Dropout(0.3),
     tf.keras.layers.Dense(10, activation=tf.nn.softmax)
 ])
 
@@ -29,7 +34,7 @@ tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir=log_dir, histogram
 model.fit(x=train_x,
           y=train_y,
           batch_size=20,
-          epochs=5, 
+          epochs=6, 
           validation_data=(val_x, val_y), 
           callbacks=[tensorboard_callback])
 
